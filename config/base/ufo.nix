@@ -41,15 +41,17 @@ in {
     };
     nvim-ufo = {
       enable = true;
-      providerSelector = # lua
-        ''
-          function()
-            return { "lsp", "indent" }
-          end
-        '';
-      preview.mappings = {
-        close = "q";
-        switch = "K";
+      settings = {
+        providerSelector = # lua
+          ''
+            function()
+              return { "lsp", "indent" }
+            end
+          '';
+        preview.mappings = {
+          close = "q";
+          switch = "K";
+        };
       };
     };
   };
