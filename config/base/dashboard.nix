@@ -31,7 +31,7 @@
             action = "qa";
           }
           {
-            desc = "  sessions ";
+            desc = "  sessions new";
             group = "DiagnosticHint";
             key = "l";
             action = "Autosession search";
